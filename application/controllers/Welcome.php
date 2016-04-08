@@ -20,6 +20,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+		$this->data['feature_admin'] = "Feature Admin";
 		$this->data['title'] = "Sample Projects";
 		$this->load->view('welcome_message');
 	}
